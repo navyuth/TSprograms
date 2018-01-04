@@ -1,0 +1,5 @@
+interface Bank
+{
+	double getROI();
+}
+
