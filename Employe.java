@@ -1,5 +1,5 @@
 
-public class Employe 
+public class Employe implements Comparable<Employe>
 {
 	int id;
 	String name;
@@ -14,26 +14,24 @@ public class Employe
 	}
 	
 	
-	
-	
-
-
-
 	@Override
 	public String toString() {
 		return "Employe [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
 
-
-
-
-
-
-
-	public static void main(String args[])
-	{
-		
-		
+	
+	@Override
+	public int compareTo(Employe o) {
+		if(this.id > o.id)
+		{
+			return 1;
+		}
+		else if(this.id<o.id)
+		{
+			return -1;
+		}
+		else
+			return 0;
 	}
 
 }

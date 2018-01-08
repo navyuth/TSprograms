@@ -12,10 +12,11 @@ public class Test3
 		list.add(new Employe(105,"saad", 50000.00));
 		list.add(new Employe(104,"Mouli",25000.00));
 		
-		
+		Collections.sort(list);
 		//display all the elements by using for-each
 		for(Employe a: list)
 		{
+			
 			System.out.println(a);
 		}
 	}
